@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="wrapper">
+            <a href="contacts.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <div class="menu-wrap">
+                <ul class="main-menu">
+                    <li><a href="#">Сеть офисов</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">База недвижимости</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Работа у нас</a></li>
+                </ul>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.8">
+                                    <circle cx="8.33467" cy="8.33467" r="6.3669" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.7629 13.0936L15.2591 15.5833" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.8">
+                                    <path d="M13.427 6.63836L10.0945 9.34814C9.46492 9.84764 8.57908 9.84764 7.94946 9.34814L4.58887 6.63836" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6816 15.75C14.9627 15.7563 16.5 13.8822 16.5 11.5788V6.42751C16.5 4.12412 14.9627 2.25 12.6816 2.25H5.31835C3.03734 2.25 1.5 4.12412 1.5 6.42751V11.5788C1.5 13.8822 3.03734 15.7563 5.31835 15.75H12.6816Z" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.8">
+                                    <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.8">
+                                    <path d="M10.1667 1.77083C12.7883 2.06196 14.8595 4.13029 15.1534 6.75183" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.1667 4.28046C11.4212 4.52413 12.4015 5.50517 12.6459 6.75962" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81408 8.83461C10.6396 11.6594 11.2806 8.39143 13.0796 10.1892C14.814 11.9232 15.8116 12.2706 13.6134 14.4675C13.3382 14.6887 11.5893 17.3501 5.44324 11.2056C-0.703581 5.06033 1.95619 3.30965 2.17746 3.03446C4.38025 0.831475 4.72241 1.83415 6.45682 3.56811C8.25509 5.36668 4.98854 6.00979 7.81408 8.83461Z" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="blue-btn">Оставить заявку</a>
+            </div>
+            <div class="drop-menu">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="breadcrumbs">
+        <div class="wrapper">
+            <ul class="breadcrumbs-list">
+                <li><a href="#">Главная</a></li>
+                <li><span>Услуги</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="services-wrap">
+        <div class="wrapper">
+            <h1>Услуги агентства недвижимости «Кредит-Центр»</h1>
+            <div class="services-items">
+                <a href="#" class="services-item">
+                    <img src="img/services-img1.jpg" alt="">
+                    <span class="icon-wrap"><img src="img/Document.svg" alt=""></span>
+                    <span class="text">Юридическое сопровождение</span>
+                </a>
+                <a href="#" class="services-item">
+                    <img src="img/services-img2.jpg" alt="">
+                    <span class="icon-wrap"><img src="img/Wallet.svg" alt=""></span>
+                    <span class="text">Помощь в продаже объектов недвижимости</span>
+                </a>
+                <a href="#" class="services-item">
+                    <img src="img/services-img3.jpg" alt="">
+                    <span class="icon-wrap"><img src="img/Home.svg" alt=""></span>
+                    <span class="text" style="max-width: 340px;">Подбор варианта для покупки объекта недвижимости</span>
+                </a>
+                <a href="#" class="services-item">
+                    <img src="img/services-img4.jpg" alt="">
+                    <span class="icon-wrap"><img src="img/Swap.svg" alt=""></span>
+                    <span class="text">Обмен/размен объекта недвижимости</span>
+                </a>
+                <a href="#" class="services-item">
+                    <img src="img/services-img2.jpg" alt="">
+                    <span class="icon-wrap"><img src="img/Home.svg" alt=""></span>
+                    <span class="text">Сдать/снять объект недвижимости</span>
+                </a>
+                <a href="#" class="services-item">
+                    <img src="img/services-img5.jpg" alt="">
+                    <span class="icon-wrap"><img src="img/Location-white.svg" alt=""></span>
+                    <span class="text">Оформление земли в Раменском районе</span>
+                </a>
+                <a href="#" class="services-item">
+                    <img src="img/services-img6.jpg" alt="">
+                    <span class="icon-wrap"><img src="img/Search-white.svg" alt=""></span>
+                    <span class="text">Оценка</span>
+                </a>
+                <a href="#" class="services-item">
+                    <img src="img/services-img7.jpg" alt="">
+                    <span class="icon-wrap"><img src="img/Password.svg" alt=""></span>
+                    <span class="text">Ипотека</span>
+                </a>
+                <a href="#" class="services-item">
+                    <img src="img/services-img8.jpg" alt="">
+                    <span class="icon-wrap"><img src="img/Shield-Done.svg" alt=""></span>
+                    <span class="text">Страхование</span>
+                </a>
+                <a href="#" class="services-item">
+                    <img src="img/services-img9.jpg" alt="">
+                    <span class="icon-wrap"><img src="img/Paper.svg" alt=""></span>
+                    <span class="text" style="max-width: 290px;">Межрегиональные сделки</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="submit-your-application services-application">
+        <div class="wrapper">
+           <div class="submit-your-application-wrap">
+                <div class="text-wrap">
+                    <h2 class="main-title">Есть вопрос? Свяжитесь с нами!</h2>
+                    <p>Получить информацию об услугах агентства недвижимости «Кредит-Центр» по операциям с недвижимостью и оценкой вы можете по единому телефону контакт-центра компании:</p>
+                    <form>
+                        <input type="tel" placeholder="Введите ваш номер телефона" class="phone-number-input">
+                        <button class="blue-btn">Оставить заявку</button>
+                    </form>
+                </div>
+               <img src="img/application-img.png" alt="">
+           </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper">
+            <ul class="footer-menu">
+                <li><a href="#">Сеть офисов</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">База недвижимости</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Работа у нас</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="footer-top-info">
+                <div class="info-wrap">
+                    <a href="index.html" class="footer-logo"><img src="img/logo.svg" alt=""></a>
+                    <p class="copyright">&copy; 1993–2022, ГК «Кредит-Центр», все права защищены </p>
+                    <a href="mailto:mozgovoi@mail.ru" class="contact-link">
+                        <span class="icon-wrap">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                            <path d="M13.427 6.63836L10.0945 9.34814C9.46492 9.84764 8.57908 9.84764 7.94946 9.34814L4.58887 6.63836" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6816 15.75C14.9627 15.7563 16.5 13.8822 16.5 11.5788V6.42751C16.5 4.12412 14.9627 2.25 12.6816 2.25H5.31835C3.03734 2.25 1.5 4.12412 1.5 6.42751V11.5788C1.5 13.8822 3.03734 15.7563 5.31835 15.75H12.6816Z" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            </svg>
+                        </span>
+                        <span>mozgovoi@mail.ru</span>
+                    </a>
+                    <a href="tel:+74993507778" class="contact-link">
+                        <span class="icon-wrap">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                            <path d="M10.1667 1.77083C12.7883 2.06196 14.8595 4.13029 15.1534 6.75183" stroke="#091B3C" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.1667 4.28046C11.4212 4.52413 12.4015 5.50517 12.6459 6.75962" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81408 8.83461C10.6396 11.6594 11.2806 8.39143 13.0796 10.1892C14.814 11.9232 15.8116 12.2706 13.6134 14.4675C13.3382 14.6887 11.5893 17.3501 5.44324 11.2056C-0.703581 5.06033 1.95619 3.30965 2.17746 3.03446C4.38025 0.831475 4.72241 1.83415 6.45682 3.56811C8.25509 5.36668 4.98854 6.00979 7.81408 8.83461Z" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            </svg>
+                        </span>
+                        <span>+7 499 350 77 78 </span>
+                    </a>
+                </div>
+                <div class="info-wrap">
+                    <h4>Квартиры и новостройки</h4>
+                    <a href="#" class="footer-link">Вторичный рынок</a>
+                    <a href="#" class="footer-link">Новостройки с отделкой</a>
+                    <a href="#" class="footer-link">Новостройки без отделки</a>
+                    <a href="#" class="footer-link">Аренда квартир</a>
+                </div>
+                <div class="info-wrap">
+                    <h4>Загородная недвижимость</h4>
+                    <a href="#" class="footer-link">Коттеджи и дома</a>
+                    <a href="#" class="footer-link">Дачи</a>
+                    <a href="#" class="footer-link">Земельные участки</a>
+                    <a href="#" class="footer-link">Элитная недвижимость</a>
+                    <a href="#" class="footer-link">Аренда домов и дач</a>
+                </div>
+                <div class="info-wrap">
+                    <h4>Коммерческая недвижимость</h4>
+                    <a href="#" class="footer-link">Коммерческая продажа</a>
+                    <a href="#" class="footer-link">Коммерческая аренда</a>
+                </div>
+                <div class="info-wrap">
+                    <h4>Нежилая недвижимость</h4>
+                    <a href="#" class="footer-link">Гаражи и машиноместа</a>
+                </div>
+            </div>
+            <div class="footer-bottom-info">
+                <div class="social">
+                    <h4>Мы в социальных сетях</h4>
+                    <a href="#" class="contact-link">
+                        <span class="icon-wrap">
+                            <svg class="vk" width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.4378 13C4.56927 13 0.525629 8.52797 0.0432304 1.02234C0.00728016 0.462992 0.460718 0 1.02122 0H2.61361C3.15818 0 3.59942 0.437549 3.63793 0.980752C3.93913 5.23013 5.60952 7.53077 7.28418 8.51654C7.84417 8.84617 8.46027 8.37649 8.46027 7.72668V1C8.46027 0.447715 8.90799 0 9.46027 0H10.8445C11.3968 0 11.8445 0.447715 11.8445 1V4.02771C11.8445 4.622 12.368 5.08451 12.9133 4.84822C14.4293 4.1913 15.8583 2.56376 16.5863 0.714495C16.7499 0.298846 17.1367 0 17.5834 0H19.0196C19.6418 0 20.1153 0.564993 19.9202 1.15588C19.3451 2.89793 18.2545 4.32717 17.1551 5.3319C16.5566 5.87893 16.6067 6.99405 17.2533 7.48333C18.462 8.39794 19.7539 9.79561 20.5716 11.7577C20.8259 12.3677 20.3465 13 19.6855 13H18.0021C17.5685 13 17.1904 12.7175 17.0183 12.3195C16.2394 10.5178 14.7938 9.1027 12.9271 8.56203C12.3593 8.39759 11.8445 8.86682 11.8445 9.45793V12.5932C11.8445 12.8179 11.6624 13 11.4378 13Z" fill-opacity="0.8"/>
+                            </svg>
+                        </span>
+                        <span>Мы во ВКонтакте</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span class="icon-wrap">
+                            <svg class="tg" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 34C26.3888 34 34 26.3888 34 17C34 7.61116 26.3888 0 17 0C7.61116 0 0 7.61116 0 17C0 26.3888 7.61116 34 17 34Z" fill="url(#paint0_linear_41_1114)"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.69518 16.8205C12.651 14.6614 15.9557 13.2379 17.6092 12.5501C22.3303 10.5865 23.3113 10.2454 23.9507 10.2341C24.0913 10.2316 24.4058 10.2665 24.6094 10.4318C24.7814 10.5713 24.8287 10.7598 24.8514 10.8921C24.874 11.0245 24.9022 11.3259 24.8798 11.5614C24.624 14.2495 23.517 20.7728 22.9538 23.7835C22.7155 25.0574 22.2463 25.4846 21.792 25.5264C20.8048 25.6172 20.0551 24.874 19.099 24.2472C17.6027 23.2664 16.7575 22.6559 15.3051 21.6988C13.6267 20.5927 14.7147 19.9848 15.6713 18.9913C15.9216 18.7313 20.2713 14.7749 20.3555 14.416C20.366 14.3711 20.3758 14.2038 20.2764 14.1154C20.177 14.0271 20.0303 14.0573 19.9244 14.0813C19.7744 14.1154 17.3841 15.6953 12.7537 18.8209C12.0753 19.2868 11.4608 19.5138 10.9102 19.5019C10.3032 19.4888 9.13557 19.1587 8.26758 18.8765C7.20295 18.5305 6.35681 18.3475 6.43049 17.7598C6.46886 17.4536 6.89043 17.1406 7.69518 16.8205Z" />
+                            </svg>
+                        </span>
+                        <span>Мы в Telegram</span>
+                    </a>
+                </div>
+                <div class="leave-request">
+                    <h4>Есть вопрос? Оставьте заявку!</h4>
+                    <form>
+                        <input type="tel" placeholder="Введите ваш номер телефона" class="phone-number-input">
+                        <button type="button" class="blue-btn">Оставить заявку</button>
+                    </form>
+                </div>
+                <div class="brand">
+                    <span>Дизайн сайта разработан в:</span>
+                    <a href="#"><img src="img/brand-img.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

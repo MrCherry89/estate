@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="wrapper">
+            <a href="object-page.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <div class="menu-wrap">
+                <ul class="main-menu">
+                    <li><a href="#">Сеть офисов</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">База недвижимости</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Работа у нас</a></li>
+                </ul>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.8">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.8">
+                                    <circle cx="8.33467" cy="8.33467" r="6.3669" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.7629 13.0936L15.2591 15.5833" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.8">
+                                    <path d="M13.427 6.63836L10.0945 9.34814C9.46492 9.84764 8.57908 9.84764 7.94946 9.34814L4.58887 6.63836" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6816 15.75C14.9627 15.7563 16.5 13.8822 16.5 11.5788V6.42751C16.5 4.12412 14.9627 2.25 12.6816 2.25H5.31835C3.03734 2.25 1.5 4.12412 1.5 6.42751V11.5788C1.5 13.8822 3.03734 15.7563 5.31835 15.75H12.6816Z" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.8">
+                                    <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.8">
+                                    <path d="M10.1667 1.77083C12.7883 2.06196 14.8595 4.13029 15.1534 6.75183" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.1667 4.28046C11.4212 4.52413 12.4015 5.50517 12.6459 6.75962" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81408 8.83461C10.6396 11.6594 11.2806 8.39143 13.0796 10.1892C14.814 11.9232 15.8116 12.2706 13.6134 14.4675C13.3382 14.6887 11.5893 17.3501 5.44324 11.2056C-0.703581 5.06033 1.95619 3.30965 2.17746 3.03446C4.38025 0.831475 4.72241 1.83415 6.45682 3.56811C8.25509 5.36668 4.98854 6.00979 7.81408 8.83461Z" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="blue-btn">Оставить заявку</a>
+            </div>
+            <div class="drop-menu">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="breadcrumbs">
+        <div class="wrapper">
+            <ul class="breadcrumbs-list">
+                <li><a href="#">Главная</a></li>
+                <li><span>База объектов</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="estate-database">
+        <div class="wrapper">
+            <h1>База недвижимости</h1>
+            <div class="info-block">
+                <ul class="tab-menu">
+                    <li class="active"><a href="#">Купить</a></li>
+                    <li><a href="#">Снять</a></li>
+                    <li><a href="#">Оценить</a></li>
+                    <li><a href="#">Ипотека</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-content-item active">
+                        <div class="top-info">
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="1">Квартиру</option>
+                                    <option value="2">Дом</option>
+                                    <option value="3">Участок</option>
+                                </select>
+                            </div>
+                            <div class="radios">
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio" name="checkbox" checked>
+                                    <label for="radio">
+                                        Комната
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio2" name="checkbox">
+                                    <label for="radio2">
+                                        Студия
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="radios">
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio3" name="checkbox2">
+                                    <label for="radio3">
+                                        1
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio4" name="checkbox2" checked>
+                                    <label for="radio4">
+                                        2
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio5" name="checkbox2">
+                                    <label for="radio5">
+                                        3
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio6" name="checkbox2">
+                                    <label for="radio6">
+                                        4+
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <div class="input-wrap">
+                                    <span class="rubl">₽</span>
+                                    <input type="text" placeholder="от">
+                                </div>
+                                <span class="line"></span>
+                                <div class="input-wrap">
+                                    <span class="rubl">₽</span>
+                                    <input type="text" placeholder="до">
+                                </div>
+
+                            </div>
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="4">Москва</option>
+                                    <option value="5">Питер</option>
+                                    <option value="6">Краснодар</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                           <div class="links">
+                               <a href="#" class="advanced-search">
+                                   <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.38886 8.63864H2.00518C1.45037 8.63864 1 8.86266 1 9.13864C1 9.41425 1.45037 9.63864 2.00518 9.63864H6.38886C6.94367 9.63864 7.39404 9.41425 7.39404 9.13864C7.39404 8.86266 6.94367 8.63864 6.38886 8.63864Z"/>
+<path d="M13.3332 2.76538C13.3332 2.48967 12.8829 2.26556 12.3288 2.26556H7.94512C7.39031 2.26556 6.93994 2.48967 6.93994 2.76538C6.93994 3.04146 7.39031 3.26556 7.94512 3.26556H12.3288C12.8829 3.26556 13.3332 3.04146 13.3332 2.76538Z"/>
+<path d="M5 2.99968C5 4.10451 4.10501 5 3 5C1.89564 5 1 4.10451 1 2.99968C1 1.89549 1.89564 1 3 1C4.10501 1 5 1.89549 5 2.99968Z" stroke-width="0.8"/>
+<path d="M13 8.00032C13 9.10451 12.105 10 11 10C9.89564 10 9 9.10451 9 8.00032C9 6.89549 9.89564 6 11 6C12.105 6 13 6.89549 13 8.00032Z" stroke-width="0.8"/>
+</svg>
+                                   Расширенный поиск
+                               </a>
+                               <a href="#" class="reset-options">
+                                   <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.6887 5.70667C11.6887 5.70667 11.3041 10.4773 11.0809 12.4868C10.9747 13.4466 10.3818 14.009 9.41068 14.0267C7.56264 14.06 5.71247 14.0622 3.86514 14.0232C2.93084 14.0041 2.34789 13.4346 2.24376 12.4918C2.01922 10.4645 1.63672 5.70667 1.63672 5.70667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.6684 3.41981H0.656494" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.3539 3.4198C9.79786 3.4198 9.31903 3.02668 9.20995 2.48197L9.03782 1.62063C8.93157 1.22326 8.57174 0.948425 8.16161 0.948425H5.16324C4.75311 0.948425 4.39328 1.22326 4.28703 1.62063L4.11491 2.48197C4.00582 3.02668 3.52699 3.4198 2.97095 3.4198" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                   Сбросить параметры
+                               </a>
+                           </div>
+                            <a href="#" class="white-btn">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66659 6.00035C7.66659 5.0795 6.92043 4.33334 6.00026 4.33334C5.07941 4.33334 4.33325 5.0795 4.33325 6.00035C4.33325 6.92052 5.07941 7.66668 6.00026 7.66668C6.92043 7.66668 7.66659 6.92052 7.66659 6.00035Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99967 13C5.20069 13 1 9.59892 1 6.04219C1 3.25776 3.23807 1 5.99967 1C8.76128 1 11 3.25776 11 6.04219C11 9.59892 6.79866 13 5.99967 13Z" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Смотреть на карте
+                            </a>
+                            <a href="#" class="blue-btn">Показать 100 объявлений</a>
+                        </div>
+                    </div>
+                    <div class="tab-content-item">
+                        <div class="top-info">
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="1">Квартиру</option>
+                                    <option value="2">Дом</option>
+                                    <option value="3">Участок</option>
+                                </select>
+                            </div>
+                            <div class="radios">
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio7" name="checkbox3" checked>
+                                    <label for="radio7">
+                                        Комната
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio8" name="checkbox3">
+                                    <label for="radio8">
+                                        Студия
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="radios">
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio9" name="checkbox4">
+                                    <label for="radio9">
+                                        1
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio10" name="checkbox4" checked>
+                                    <label for="radio10">
+                                        2
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio11" name="checkbox4">
+                                    <label for="radio11">
+                                        3
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio12" name="checkbox4">
+                                    <label for="radio12">
+                                        4+
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <div class="input-wrap">
+                                    <span class="rubl">₽</span>
+                                    <input type="text" placeholder="от">
+                                </div>
+                                <span class="line"></span>
+                                <div class="input-wrap">
+                                    <span class="rubl">₽</span>
+                                    <input type="text" placeholder="до">
+                                </div>
+
+                            </div>
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="4">Москва</option>
+                                    <option value="5">Питер</option>
+                                    <option value="6">Краснодар</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="links">
+                               <a href="#" class="advanced-search">
+                                   <img src="img/advanced-search-icon.svg" alt="">
+                                   Расширенный поиск
+                               </a>
+                               <a href="#" class="reset-options">
+                                   <img src="img/Delete.svg" alt="">
+                                   Сбросить параметры
+                               </a>
+                           </div>
+                            <a href="#" class="white-btn">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66659 6.00035C7.66659 5.0795 6.92043 4.33334 6.00026 4.33334C5.07941 4.33334 4.33325 5.0795 4.33325 6.00035C4.33325 6.92052 5.07941 7.66668 6.00026 7.66668C6.92043 7.66668 7.66659 6.92052 7.66659 6.00035Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99967 13C5.20069 13 1 9.59892 1 6.04219C1 3.25776 3.23807 1 5.99967 1C8.76128 1 11 3.25776 11 6.04219C11 9.59892 6.79866 13 5.99967 13Z" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Смотреть на карте
+                            </a>
+                            <a href="#" class="blue-btn">Показать 100 объявлений 2</a>
+                        </div>
+                    </div>
+                    <div class="tab-content-item">
+                        <div class="top-info">
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="1">Квартиру</option>
+                                    <option value="2">Дом</option>
+                                    <option value="3">Участок</option>
+                                </select>
+                            </div>
+                            <div class="radios">
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio19" name="checkbox5" checked>
+                                    <label for="radio19">
+                                        Комната
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio20" name="checkbox5">
+                                    <label for="radio20">
+                                        Студия
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="radios">
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio21" name="checkbox6">
+                                    <label for="radio21">
+                                        1
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio22" name="checkbox6" checked>
+                                    <label for="radio22">
+                                        2
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio23" name="checkbox6">
+                                    <label for="radio23">
+                                        3
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio24" name="checkbox6">
+                                    <label for="radio24">
+                                        4+
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <div class="input-wrap">
+                                    <span class="rubl">₽</span>
+                                    <input type="text" placeholder="от">
+                                </div>
+                                <span class="line"></span>
+                                <div class="input-wrap">
+                                    <span class="rubl">₽</span>
+                                    <input type="text" placeholder="до">
+                                </div>
+
+                            </div>
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="4">Москва</option>
+                                    <option value="5">Питер</option>
+                                    <option value="6">Краснодар</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                                                      <div class="links">
+                               <a href="#" class="advanced-search">
+                                   <img src="img/advanced-search-icon.svg" alt="">
+                                   Расширенный поиск
+                               </a>
+                               <a href="#" class="reset-options">
+                                   <img src="img/Delete.svg" alt="">
+                                   Сбросить параметры
+                               </a>
+                           </div>
+                            <a href="#" class="white-btn">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66659 6.00035C7.66659 5.0795 6.92043 4.33334 6.00026 4.33334C5.07941 4.33334 4.33325 5.0795 4.33325 6.00035C4.33325 6.92052 5.07941 7.66668 6.00026 7.66668C6.92043 7.66668 7.66659 6.92052 7.66659 6.00035Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99967 13C5.20069 13 1 9.59892 1 6.04219C1 3.25776 3.23807 1 5.99967 1C8.76128 1 11 3.25776 11 6.04219C11 9.59892 6.79866 13 5.99967 13Z" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Смотреть на карте
+                            </a>
+                            <a href="#" class="blue-btn">Показать 100 объявлений 3</a>
+                        </div>
+                    </div>
+                    <div class="tab-content-item">
+                        <div class="top-info">
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="1">Квартиру</option>
+                                    <option value="2">Дом</option>
+                                    <option value="3">Участок</option>
+                                </select>
+                            </div>
+                            <div class="radios">
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio13" name="checkbox7" checked>
+                                    <label for="radio13">
+                                        Комната
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio14" name="checkbox7">
+                                    <label for="radio14">
+                                        Студия
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="radios">
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio15" name="checkbox8">
+                                    <label for="radio15">
+                                        1
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio16" name="checkbox8" checked>
+                                    <label for="radio16">
+                                        2
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio17" name="checkbox8">
+                                    <label for="radio17">
+                                        3
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <input type="radio" id="radio18" name="checkbox8">
+                                    <label for="radio18">
+                                        4+
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <div class="input-wrap">
+                                    <span class="rubl">₽</span>
+                                    <input type="text" placeholder="от">
+                                </div>
+                                <span class="line"></span>
+                                <div class="input-wrap">
+                                    <span class="rubl">₽</span>
+                                    <input type="text" placeholder="до">
+                                </div>
+
+                            </div>
+                            <div class="select-wrap">
+                                <select>
+                                    <option value="4">Москва</option>
+                                    <option value="5">Питер</option>
+                                    <option value="6">Краснодар</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                                                      <div class="links">
+                               <a href="#" class="advanced-search">
+                                   <img src="img/advanced-search-icon.svg" alt="">
+                                   Расширенный поиск
+                               </a>
+                               <a href="#" class="reset-options">
+                                   <img src="img/Delete.svg" alt="">
+                                   Сбросить параметры
+                               </a>
+                           </div>
+                            <a href="#" class="white-btn">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66659 6.00035C7.66659 5.0795 6.92043 4.33334 6.00026 4.33334C5.07941 4.33334 4.33325 5.0795 4.33325 6.00035C4.33325 6.92052 5.07941 7.66668 6.00026 7.66668C6.92043 7.66668 7.66659 6.92052 7.66659 6.00035Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99967 13C5.20069 13 1 9.59892 1 6.04219C1 3.25776 3.23807 1 5.99967 1C8.76128 1 11 3.25776 11 6.04219C11 9.59892 6.79866 13 5.99967 13Z" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Смотреть на карте
+                            </a>
+                            <a href="#" class="blue-btn">Показать 100 объявлений 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-items-wrap">
+        <div class="wrapper">
+            <div class="product-items">
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="invitation">
+        <div class="wrapper">
+           <a href="#" class="invitation-wrap">
+                <div class="text-wrap">
+                    <p>Приглашаем на работу</p>
+                    <h2 class="main-title">Специалист по продаже недвижимости</h2>
+                    <span>28 лет на рынке недвижимости!</span>
+                </div>
+                <img src="img/invitation-img.png" alt="">
+           </a>
+        </div>
+    </div>
+    
+    <div class="product-items-wrap">
+        <div class="wrapper">
+            <div class="product-items">
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="new-area">
+        <div class="wrapper">
+            <a href="#" class="new-area-wrap">
+                <span>город Раменское</span>
+                <h2 class="main-title white">Новый район, свежий ремонт, кухня с техникой – в подарок!</h2>
+                <p><img src="img/small-icon3.svg" alt="">90.6 м² / 52 м² / 20 м²</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="product-items-wrap">
+        <div class="wrapper">
+            <div class="product-items">
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                 <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+                <div class="product-item">
+                    <div class="top-line">
+                        <button>новый объект</button>
+                        <div class="icons">
+                            <button><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.27364 9.18201C1.42418 6.52992 2.41693 3.49863 5.20122 2.60167C6.66581 2.12905 8.28239 2.40771 9.49998 3.32367C10.6519 2.43305 12.3278 2.13221 13.7908 2.60167C16.5751 3.49863 17.5742 6.52992 16.7255 9.18201C15.4034 13.3858 9.49998 16.6237 9.49998 16.6237C9.49998 16.6237 3.64006 13.4348 2.27364 9.18201Z" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <path d="M13.1937 6.47158L8.4242 11.051L2.99953 7.82774C2.22229 7.36578 2.38397 6.24422 3.2631 5.99998L16.1427 2.41677C16.9477 2.19262 17.6938 2.90766 17.4546 3.67491L13.6442 15.902C13.3832 16.7384 12.2093 16.8878 11.7277 16.1462L8.42167 11.0518" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-slider-wrap">
+                                <div class="slider-navigation">
+                                    <button type="button" class="slick-next"><img src="img/arrow-down.svg" alt=""></button>
+                                    <button type="button" class="slick-prev"><img src="img/arrow-down.svg" alt=""></button>
+                                </div>
+                        <div class="slider product-slider">
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                            <div class="item"><img src="img/product-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                            <a href="#" class="text-wrap">
+                                <span class="date">опубликовано 24.07.2021</span>
+                                <p class="address">Квартира, Жуковский г., Чкалова ул., 21</p>
+                                <div class="texts">
+                                    <p><img src="img/small-icon1.svg" alt="">3 комнатная</p>
+                                    <p><img src="img/small-icon2.svg" alt="">87.1 м² / 54.7 м² / 10.7 м²</p>
+                                </div>
+                                <span class="price">10 500 000 ₽</span>
+                            </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pagination-wrap">
+        <div class="wrapper">
+            <p>Вы посмотрели 20 из 234 квартир</p>
+            <div class="pagination">
+                <button type="button"><img src="img/left-arrow-black.svg" alt=""></button>
+                <ul>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+                <button type="button"><img src="img/right-arrow-black.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="submit-your-application">
+        <div class="wrapper">
+           <div class="submit-your-application-wrap">
+                <div class="text-wrap">
+                    <h2 class="main-title">Есть вопрос? Свяжитесь с нами!</h2>
+                    <p>Получить информацию об услугах агентства недвижимости «Кредит-Центр» по операциям с недвижимостью и оценкой вы можете по единому телефону контакт-центра компании:</p>
+                    <form>
+                        <input type="tel" placeholder="Введите ваш номер телефона" class="phone-number-input">
+                        <button class="blue-btn">Оставить заявку</button>
+                    </form>
+                </div>
+               <img src="img/application-img.png" alt="">
+           </div>
+        </div>
+    </div>
+    
+    <div class="useful-links">
+        <div class="wrapper">
+            <h2 class="main-title">Полезные ссылки</h2>
+            <div class="realtor-help">
+                <div class="info">
+                    <h2 class="main-title">Помощь риелтора</h2>
+                    <p>Риелтор поможет купить или продать недвижимость</p>
+                    <a href="#" class="blue-btn">Оставить заявку</a>
+                </div>
+                <img src="img/realtor-img.png" alt="">
+            </div>
+            <div class="links-items">
+                <div class="links-item">
+                    <div class="top">
+                        <div class="img-wrap"><img src="img/links-img1.jpg" alt=""></div>
+                        <p>Купить квартиру</p>
+                    </div>
+                    <ul class="links-list">
+                        <li>
+                            <a href="#" class="gray-btn">1-комнатные</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">2-комнатные</a>
+                            <a href="#" class="link">12 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">3-комнатные</a>
+                            <a href="#" class="link">42 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Свободная планировка</a>
+                            <a href="#" class="link">4244 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Комнаты в квартире</a>
+                            <a href="#" class="link">2 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Квартиры-студии</a>
+                            <a href="#" class="link">1 054 предложений</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links-item">
+                    <div class="top">
+                        <div class="img-wrap"><img src="img/links-img2.jpg" alt=""></div>
+                        <p>Снять квартиру</p>
+                    </div>
+                    <ul class="links-list">
+                        <li>
+                            <a href="#" class="gray-btn">1-комнатные</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">2-комнатные</a>
+                            <a href="#" class="link">12 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">3-комнатные</a>
+                            <a href="#" class="link">42 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Комнаты в квартире</a>
+                            <a href="#" class="link">2 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Квартиры-студии</a>
+                            <a href="#" class="link">1 054 предложений</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links-item">
+                    <div class="top">
+                        <div class="img-wrap"><img src="img/links-img3.jpg" alt=""></div>
+                        <p>Снять посуточно</p>
+                    </div>
+                    <ul class="links-list">
+                        <li>
+                            <a href="#" class="gray-btn">Квартиры посуточно</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Коттеджи на сутки</a>
+                            <a href="#" class="link">12 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Комнаты на сутки</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Хостелы</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links-items2">
+                <div class="links-item">
+                    <div class="top">
+                        <div class="img-wrap"><img src="img/links-img4.jpg" alt=""></div>
+                        <p>Загородная недивжимость</p>
+                    </div>
+                    <ul class="links-list">
+                        <li>
+                            <a href="#" class="gray-btn">Каталог поселков</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Купить дом</a>
+                            <a href="#" class="link">12 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Купить таунхаус</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Купить участок</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Снять дом надолго</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links-item">
+                    <div class="top">
+                        <div class="img-wrap"><img src="img/links-img5.jpg" alt=""></div>
+                        <p>Новостройки</p>
+                    </div>
+                    <ul class="links-list">
+                        <li>
+                            <a href="#" class="gray-btn">Каталог ЖК</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Сданные новостройки</a>
+                            <a href="#" class="link">12 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Строящиеся новостройки</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links-item">
+                    <div class="top">
+                        <div class="img-wrap"><img src="img/links-img6.jpg" alt=""></div>
+                        <p>Коммерческя недвижимось</p>
+                    </div>
+                    <ul class="links-list">
+                        <li>
+                            <a href="#" class="gray-btn">Купить склад</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Купить гараж</a>
+                            <a href="#" class="link">12 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Купить офис</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Арендовать офис</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Арендовать помещение</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gray-btn">Арендовать торговую площадь</a>
+                            <a href="#" class="link">22 054 предложений</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-map">
+                    <h2 class="main-title">Поиск на карте</h2>
+                    <p>Ищите новостройки рядом с работой, парком или родственниками</p>
+                    <a href="#" class="blue-btn">Найти на карте</a>
+                    <img src="img/map-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper">
+            <ul class="footer-menu">
+                <li><a href="#">Сеть офисов</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">База недвижимости</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Работа у нас</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="footer-top-info">
+                <div class="info-wrap">
+                    <a href="index.html" class="footer-logo"><img src="img/logo.svg" alt=""></a>
+                    <p class="copyright">&copy; 1993–2022, ГК «Кредит-Центр», все права защищены </p>
+                    <a href="mailto:mozgovoi@mail.ru" class="contact-link">
+                        <span class="icon-wrap">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                            <path d="M13.427 6.63836L10.0945 9.34814C9.46492 9.84764 8.57908 9.84764 7.94946 9.34814L4.58887 6.63836" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6816 15.75C14.9627 15.7563 16.5 13.8822 16.5 11.5788V6.42751C16.5 4.12412 14.9627 2.25 12.6816 2.25H5.31835C3.03734 2.25 1.5 4.12412 1.5 6.42751V11.5788C1.5 13.8822 3.03734 15.7563 5.31835 15.75H12.6816Z" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            </svg>
+                        </span>
+                        <span>mozgovoi@mail.ru</span>
+                    </a>
+                    <a href="tel:+74993507778" class="contact-link">
+                        <span class="icon-wrap">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                            <path d="M10.1667 1.77083C12.7883 2.06196 14.8595 4.13029 15.1534 6.75183" stroke="#091B3C" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.1667 4.28046C11.4212 4.52413 12.4015 5.50517 12.6459 6.75962" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.81408 8.83461C10.6396 11.6594 11.2806 8.39143 13.0796 10.1892C14.814 11.9232 15.8116 12.2706 13.6134 14.4675C13.3382 14.6887 11.5893 17.3501 5.44324 11.2056C-0.703581 5.06033 1.95619 3.30965 2.17746 3.03446C4.38025 0.831475 4.72241 1.83415 6.45682 3.56811C8.25509 5.36668 4.98854 6.00979 7.81408 8.83461Z" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            </svg>
+                        </span>
+                        <span>+7 499 350 77 78 </span>
+                    </a>
+                </div>
+                <div class="info-wrap">
+                    <h4>Квартиры и новостройки</h4>
+                    <a href="#" class="footer-link">Вторичный рынок</a>
+                    <a href="#" class="footer-link">Новостройки с отделкой</a>
+                    <a href="#" class="footer-link">Новостройки без отделки</a>
+                    <a href="#" class="footer-link">Аренда квартир</a>
+                </div>
+                <div class="info-wrap">
+                    <h4>Загородная недвижимость</h4>
+                    <a href="#" class="footer-link">Коттеджи и дома</a>
+                    <a href="#" class="footer-link">Дачи</a>
+                    <a href="#" class="footer-link">Земельные участки</a>
+                    <a href="#" class="footer-link">Элитная недвижимость</a>
+                    <a href="#" class="footer-link">Аренда домов и дач</a>
+                </div>
+                <div class="info-wrap">
+                    <h4>Коммерческая недвижимость</h4>
+                    <a href="#" class="footer-link">Коммерческая продажа</a>
+                    <a href="#" class="footer-link">Коммерческая аренда</a>
+                </div>
+                <div class="info-wrap">
+                    <h4>Нежилая недвижимость</h4>
+                    <a href="#" class="footer-link">Гаражи и машиноместа</a>
+                </div>
+            </div>
+            <div class="footer-bottom-info">
+                <div class="social">
+                    <h4>Мы в социальных сетях</h4>
+                    <a href="#" class="contact-link">
+                        <span class="icon-wrap">
+                            <svg class="vk" width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.4378 13C4.56927 13 0.525629 8.52797 0.0432304 1.02234C0.00728016 0.462992 0.460718 0 1.02122 0H2.61361C3.15818 0 3.59942 0.437549 3.63793 0.980752C3.93913 5.23013 5.60952 7.53077 7.28418 8.51654C7.84417 8.84617 8.46027 8.37649 8.46027 7.72668V1C8.46027 0.447715 8.90799 0 9.46027 0H10.8445C11.3968 0 11.8445 0.447715 11.8445 1V4.02771C11.8445 4.622 12.368 5.08451 12.9133 4.84822C14.4293 4.1913 15.8583 2.56376 16.5863 0.714495C16.7499 0.298846 17.1367 0 17.5834 0H19.0196C19.6418 0 20.1153 0.564993 19.9202 1.15588C19.3451 2.89793 18.2545 4.32717 17.1551 5.3319C16.5566 5.87893 16.6067 6.99405 17.2533 7.48333C18.462 8.39794 19.7539 9.79561 20.5716 11.7577C20.8259 12.3677 20.3465 13 19.6855 13H18.0021C17.5685 13 17.1904 12.7175 17.0183 12.3195C16.2394 10.5178 14.7938 9.1027 12.9271 8.56203C12.3593 8.39759 11.8445 8.86682 11.8445 9.45793V12.5932C11.8445 12.8179 11.6624 13 11.4378 13Z" fill-opacity="0.8"/>
+                            </svg>
+                        </span>
+                        <span>Мы во ВКонтакте</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span class="icon-wrap">
+                            <svg class="tg" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 34C26.3888 34 34 26.3888 34 17C34 7.61116 26.3888 0 17 0C7.61116 0 0 7.61116 0 17C0 26.3888 7.61116 34 17 34Z" fill="url(#paint0_linear_41_1114)"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.69518 16.8205C12.651 14.6614 15.9557 13.2379 17.6092 12.5501C22.3303 10.5865 23.3113 10.2454 23.9507 10.2341C24.0913 10.2316 24.4058 10.2665 24.6094 10.4318C24.7814 10.5713 24.8287 10.7598 24.8514 10.8921C24.874 11.0245 24.9022 11.3259 24.8798 11.5614C24.624 14.2495 23.517 20.7728 22.9538 23.7835C22.7155 25.0574 22.2463 25.4846 21.792 25.5264C20.8048 25.6172 20.0551 24.874 19.099 24.2472C17.6027 23.2664 16.7575 22.6559 15.3051 21.6988C13.6267 20.5927 14.7147 19.9848 15.6713 18.9913C15.9216 18.7313 20.2713 14.7749 20.3555 14.416C20.366 14.3711 20.3758 14.2038 20.2764 14.1154C20.177 14.0271 20.0303 14.0573 19.9244 14.0813C19.7744 14.1154 17.3841 15.6953 12.7537 18.8209C12.0753 19.2868 11.4608 19.5138 10.9102 19.5019C10.3032 19.4888 9.13557 19.1587 8.26758 18.8765C7.20295 18.5305 6.35681 18.3475 6.43049 17.7598C6.46886 17.4536 6.89043 17.1406 7.69518 16.8205Z" />
+                            </svg>
+                        </span>
+                        <span>Мы в Telegram</span>
+                    </a>
+                </div>
+                <div class="leave-request">
+                    <h4>Есть вопрос? Оставьте заявку!</h4>
+                    <form>
+                        <input type="tel" placeholder="Введите ваш номер телефона" class="phone-number-input">
+                        <button type="button" class="blue-btn">Оставить заявку</button>
+                    </form>
+                </div>
+                <div class="brand">
+                    <span>Дизайн сайта разработан в:</span>
+                    <a href="#"><img src="img/brand-img.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
